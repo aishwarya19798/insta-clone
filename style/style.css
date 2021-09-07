@@ -1,0 +1,179 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #808080;
+}
+
+.container{
+    background-color: white;
+    min-width:400px;
+    padding:20px;
+    box-shadow:-5px 5px 10px 2px #696969ff;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-profile{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-profile svg{
+    stroke:rgb(80, 79, 79);
+}
+.profile-image{
+    position: relative;
+    border:1px solid transparent;
+    border-radius: 50%;
+    width: 40px;
+    height:40px;
+    overflow: hidden;
+    /* margin-left: 10px; */
+}
+
+.profile-image img{
+    /* position: absolute; */
+    width:40px;
+    height: auto;
+}
+
+.username{
+    font-family: sans-serif;
+    padding-left: 10px;
+}
+
+.username h1{
+    font-size: 16px;
+    font-weight: normal;
+}
+
+.username p{
+    font-size: 12px;
+}
+
+.image-post{
+    margin:10px 0px;
+}
+
+.image-post img{
+    width: 350px;
+    height: auto;
+}
+
+.icon-section{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.icon-section svg{
+    stroke-width: 1.5px;
+    stroke:rgb(80, 79, 79);
+}
+
+.like svg{
+    margin-right:5px;
+}
+
+.save svg{
+    margin-right:5px;
+}
+
+.like-counter p{
+    font-family: sans-serif;
+    font-weight: normal;
+    margin:5px 3px;
+    font-size: 15px;
+}
+
+.post-title p{
+    font-family: sans-serif;
+    font-weight: normal;
+    margin:5px 3px;
+    font-size: 15px;
+    color: rgb(80, 79, 79);
+}
+
+.post-title b{
+    color: black;
+}
+
+.comment-section{
+    font-family: sans-serif;
+    font-weight: normal;
+    margin:5px 3px;
+    color: rgb(80, 79, 79);
+}
+
+.view-comment p{
+    font-size: 14px;
+}
+
+.user-image{
+    position: relative;
+    border:1px solid transparent;
+    border-radius: 50%;
+    width: 30px;
+    height:30px;
+    overflow: hidden;
+    margin:10px 10px 10px 0px;
+}
+
+.user-image img{
+    /* position: absolute; */
+    width:35px;
+    height: auto;
+}
+
+.write-comment{
+    display: flex;
+    align-items: center;
+}
+
+.comment input{
+    border:none;
+    outline: none;
+    color: rgb(34, 34, 34);
+    font-family:sans-serif;
+}
+
+.comment input::placeholder{
+    letter-spacing: 0.1em;
+}
+
+.ago p{
+    font-family: sans-serif;
+    font-weight: 600;
+    margin:5px 3px;
+    color: rgb(104, 103, 103);
+    font-size: 11px;
+}
+
+.heart.active{
+    fill:red;
+    stroke:red;
+}
+
+.onSave.active{
+    fill:rgb(4, 4, 95);
+    stroke:rgb(4, 4, 95);
+}
+
+.heart,.onSave{
+    fill:none;
+    stroke:rgb(80, 79, 79);
+}
